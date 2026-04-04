@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery | McDonald Grocery & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">McDonald Grocery And Restaurant</a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="grocery.html" class="active">Grocery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header" style="background-image: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600&q=80'); background-size: cover;">
+        <div class="container" data-aos="fade-in">
+            <h1>Local Grocery</h1>
+            <p>Fresh Produce, Pantry Essentials & Daily Specials</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <!-- Grocery Categories -->
+            <div class="grid-2">
+                
+                <!-- Fresh Produce -->
+                <div class="menu-card glass-card" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=800&q=80" alt="Fresh Produce" class="menu-img" style="border-radius: var(--radius-sm); height: 200px;">
+                    <div class="menu-info" style="padding: 20px 0 0 0;">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Fresh Produce</h3>
+                        </div>
+                        <ul style="list-style-type: none; margin-bottom: 15px; padding-left: 0;">
+                            <li style="margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px;">
+                                <span style="font-weight: 500;">Fresh Veggies Basket</span> - $5.99
+                            </li>
+                            <li style="margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px;">
+                                <span style="font-weight: 500;">Local Seasonal Fruits</span> - $6.50
+                            </li>
+                            <li style="margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px;">
+                                <span style="font-weight: 500;">Crispy Mixed Greens</span> - $4.99
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pantry Essentials -->
+                <div class="menu-card glass-card" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=800&q=80" alt="Pantry Essentials" class="menu-img" style="border-radius: var(--radius-sm); height: 200px;">
+                    <div class="menu-info" style="padding: 20px 0 0 0;">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Pantry Essentials</h3>
+                        </div>
+                        <ul style="list-style-type: none; margin-bottom: 15px; padding-left: 0;">
+                            <li style="margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px;">
+                                <span style="font-weight: 500;">Farm Fresh Eggs (Dozen)</span> - $3.99
+                            </li>
+                            <li style="margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px;">
+                                <span style="font-weight: 500;">Organic Dairy Milk (Gallon)</span> - $4.50
+                            </li>
+                            <li style="margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px;">
+                                <span style="font-weight: 500;">Artisan Bread Loaf</span> - $3.50
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deli Specials -->
+                <div class="menu-card glass-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&q=80" alt="Deli Specials" class="menu-img" style="border-radius: var(--radius-sm); height: 200px;">
+                    <div class="menu-info" style="padding: 20px 0 0 0;">
+                        <div class="menu-header">
+                            <h3 class="menu-title">Deli Specials</h3>
+                        </div>
+                        <p class="menu-desc">Sliced premium meats, local cheeses, and freshly prepared side salads. Ask our staff for today's selection!</p>
+                    </div>
+                </div>
+
+                <!-- Daily Updates -->
+                <div class="menu-card glass-card" style="background: var(--dark-bg); color: #fff;" data-aos="fade-up">
+                    <div class="menu-info" style="padding: 20px 0 0 0;">
+                        <div class="menu-header">
+                            <h3 class="menu-title" style="color: var(--secondary);">Follow Our Daily Specials</h3>
+                        </div>
+                        <p style="color: #ccc; margin-bottom: 20px;">We receive fresh goods daily. Follow us on Facebook to see out latest grocery drop!</p>
+                        <a href="https://facebook.com" target="_blank" class="btn btn-primary" style="width: 100%;"><i class="fab fa-facebook mr-2"></i> Visit Facebook Page</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none;">
+                &copy; 2026 McDonald Grocery & Restaurant. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/17855382528" class="floating-whatsapp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

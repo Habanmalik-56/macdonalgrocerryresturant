@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | McDonald Grocery & Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">McDonald Grocery And Restaurant</a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="grocery.html">Grocery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container" data-aos="fade-in">
+            <h1>Our Menu</h1>
+            <p>Dine-in, Takeout, or Delivery. $1-$10 per person on average.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <!-- Filter Options -->
+            <div class="menu-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+                <button class="filter-btn" data-filter="lunch">Lunch</button>
+                <button class="filter-btn" data-filter="dinner">Dinner</button>
+                <button class="filter-btn" data-filter="specials">Specials</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid-3" id="menu-grid" data-aos="fade-up">
+                
+                <!-- Item 1 -->
+                <div class="menu-item-wrap" data-category="dinner">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500&q=80" alt="Fried Chicken" class="menu-img" style="border-radius: var(--radius-sm);">
+                        <div class="menu-info" style="padding: 20px 0 0 0;">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Home-Style Fried Chicken</h3>
+                                <span class="menu-price">$8.99</span>
+                            </div>
+                            <p class="menu-desc">Crispy golden crust, juicy on the inside.</p>
+                            <button class="btn btn-accent" style="width: 100%; padding: 10px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-item-wrap" data-category="lunch">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80" alt="Small Town Pizza" class="menu-img" style="border-radius: var(--radius-sm);">
+                        <div class="menu-info" style="padding: 20px 0 0 0;">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Small Town Pizza</h3>
+                                <span class="menu-price">$12.99</span>
+                            </div>
+                            <p class="menu-desc">A local favorite with ample cheese and toppings.</p>
+                            <button class="btn btn-accent" style="width: 100%; padding: 10px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-item-wrap" data-category="specials">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=80" alt="Daily Lunch Special" class="menu-img" style="border-radius: var(--radius-sm);">
+                        <div class="menu-info" style="padding: 20px 0 0 0;">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Daily Lunch Special</h3>
+                                <span class="menu-price">$7.99</span>
+                            </div>
+                            <p class="menu-desc">Rotating special. Hearty, warm, home-cooked.</p>
+                            <button class="btn btn-accent" style="width: 100%; padding: 10px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-item-wrap" data-category="breakfast">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?w=500&q=80" alt="Pancakes" class="menu-img" style="border-radius: var(--radius-sm);">
+                        <div class="menu-info" style="padding: 20px 0 0 0;">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Country Pancakes</h3>
+                                <span class="menu-price">$6.99</span>
+                            </div>
+                            <p class="menu-desc">Stack of 3 fluffy pancakes with maple syrup.</p>
+                            <button class="btn btn-accent" style="width: 100%; padding: 10px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-item-wrap" data-category="lunch">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Cheeseburger" class="menu-img" style="border-radius: var(--radius-sm);">
+                        <div class="menu-info" style="padding: 20px 0 0 0;">
+                            <div class="menu-header">
+                                <h3 class="menu-title">American Classic Burger</h3>
+                                <span class="menu-price">$9.50</span>
+                            </div>
+                            <p class="menu-desc">Beef patty, local cheddar, fresh lettuce & tomato.</p>
+                            <button class="btn btn-accent" style="width: 100%; padding: 10px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-item-wrap" data-category="specials">
+                    <div class="menu-card glass-card">
+                        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=500&q=80" alt="Pakistani Biryani" class="menu-img" style="border-radius: var(--radius-sm);">
+                        <div class="menu-info" style="padding: 20px 0 0 0;">
+                            <div class="menu-header">
+                                <h3 class="menu-title">Chicken Biryani</h3>
+                                <span class="menu-price">$10.99</span>
+                            </div>
+                            <p class="menu-desc">Pakistani-American hybrid special, aromatic & spicy.</p>
+                            <button class="btn btn-accent" style="width: 100%; padding: 10px;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid-3 footer-grid">
+                <div class="footer-col">
+                    <h3>McDonald's</h3>
+                    <p>Home-cooked comfort and friendly service in the heart of small-town Kansas.</p>
+                </div>
+                <!-- same footer content -->
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 McDonald Grocery & Restaurant. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/17855382528" class="floating-whatsapp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
