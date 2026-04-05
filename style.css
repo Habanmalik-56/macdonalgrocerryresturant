@@ -139,8 +139,8 @@ a {
   font-family: var(--font-heading);
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 900;
-  color: #e63946 !important;
-  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.6);
+  color: #D4A574 !important;
+  text-shadow: 0 0 25px rgba(212, 165, 116, 0.7), 2px 3px 10px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.5px;
   line-height: 1.1;
 }
@@ -148,8 +148,7 @@ a {
   color: var(--text);
 }
 .navbar.scrolled .logo {
-  color: #d32f2f !important;
-  -webkit-text-stroke: 0px;
+  color: #c4915a !important;
   text-shadow: none;
 }
 .nav-links {
