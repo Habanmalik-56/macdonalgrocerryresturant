@@ -136,20 +136,18 @@ a {
   align-items: center;
 }
 .logo {
-  font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: 900;
-  color: #D4A574 !important;
-  text-shadow: 0 0 25px rgba(212, 165, 116, 0.7), 2px 3px 10px rgba(0, 0, 0, 0.5);
-  letter-spacing: 0.5px;
-  line-height: 1.1;
+  display: flex;
+  align-items: center;
 }
-.navbar.scrolled .logo, .navbar.scrolled .nav-links a {
+.logo img {
+  transition: all 0.4s ease;
+}
+.navbar.scrolled .nav-links a {
   color: var(--text);
 }
-.navbar.scrolled .logo {
-  color: #c4915a !important;
-  text-shadow: none;
+.navbar.scrolled .logo img {
+  transform: scale(0.8);
+  transform-origin: left center;
 }
 .nav-links {
   display: flex;
