@@ -388,6 +388,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+    background-position: center center;
+  }
   .hero-content h1 { font-size: 2.8rem; }
   .hamburger { display: block; }
   .nav-links {
