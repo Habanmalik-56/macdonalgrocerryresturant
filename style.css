@@ -172,6 +172,7 @@ a {
   color: var(--secondary);
 }
 .navbar.scrolled .hamburger { color: var(--text); }
+.close-menu { display: none; }
 
 /* Hero Section */
 .hero {
@@ -408,6 +409,21 @@ footer {
   }
   .nav-links.active { right: 0; }
   .nav-links a { color: var(--text) !important; font-size: 1.2rem; }
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+  }
+  .close-menu:hover {
+    transform: rotate(90deg);
+    color: var(--accent);
+  }
   .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .hero-buttons { flex-direction: column; }
   .glass-card { padding: 30px 20px; }
