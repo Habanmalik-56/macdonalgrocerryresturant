@@ -125,10 +125,12 @@ a {
   transition: all 0.4s ease;
 }
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(15px);
-  padding: 16px 0;
-  box-shadow: var(--shadow-light);
+  background: rgba(90, 90, 64, 0.8); /* Semi-transparent Olive */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 12px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(212, 165, 116, 0.2); /* Accent border */
 }
 .navbar .container {
   display: flex;
@@ -143,7 +145,7 @@ a {
   transition: all 0.4s ease;
 }
 .navbar.scrolled .nav-links a {
-  color: var(--text);
+  color: #fff;
 }
 .navbar.scrolled .logo img {
   transform: scale(0.8);
@@ -159,7 +161,7 @@ a {
   font-weight: 500;
   font-size: 1rem;
 }
-.navbar.scrolled .nav-links a { color: var(--text); }
+.navbar.scrolled .nav-links a { color: #fff; }
 .nav-links a:hover, .nav-links a.active {
   color: var(--accent);
 }
@@ -171,7 +173,7 @@ a {
   font-size: 1.5rem;
   color: var(--secondary);
 }
-.navbar.scrolled .hamburger { color: var(--text); }
+.navbar.scrolled .hamburger { color: #fff; }
 .close-menu { display: none; }
 
 /* Hero Section */
